@@ -48,4 +48,8 @@ linear_solve_predictive_mean.py
 For more details on their arguments, refer to the batch scripts in `./scripts/`.
 
 ## Checkpoints
-Since training Gaussian processes on large-scale datasets is time consuming, we release the pretrained checkpoints under the folder `./checkpoints/`.
+Training Gaussian processes on large-scale datasets is time consuming.
+To facilitate reproducibility, we release the pretrained Gaussian processes under the folder `./checkpoints/`.
+CG-trained GPs are under the folder `./checkpoints/cg` and alternating projection-trained GPs are under the folder `./checkpoints/altproj`.
+The name of the subfolder indicates the dataset, kernel, and random seed used in training.
+For example, `./checkpoints/altproj/3droad-matern-0/epoch_49.tar` is a Matern Gaussian process trained on 3droad with alternating projection and the random seed 0.
