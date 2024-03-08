@@ -13,6 +13,7 @@ Install the following packages
 - python==3.8
 - pykeops==2.1.2
 - pandas
+
 You also need `git lfs` to download the data file in `./data`.
 
 Install the GPyTorch branch that implements alternating projection
